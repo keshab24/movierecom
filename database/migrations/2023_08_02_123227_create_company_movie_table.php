@@ -11,12 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('images', function (Blueprint $table) {
-            $table->id();
-            $table->string('poster_path');
-            $table->string('backdrop_path');
-            $table->bigInteger('movie_id');
-            $table->timestamps();
+        Schema::create('company_movie', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('company_id');
+            $table->Biginteger('movie_id');
         });
     }
 
@@ -25,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('images');
+        Schema::dropIfExists('company_movie');
     }
 };
