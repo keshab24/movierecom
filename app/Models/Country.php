@@ -7,5 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Country extends Model
 {
+    
     use HasFactory;
+    public function getMovies(){
+        return $this->belongsToMany(Movie::class);
+    }
 }

@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('ratings', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id');
-            $table->Biginteger('movie_id');
+            $table->integer('movie_id');
             $table->float('rating');
 
         });

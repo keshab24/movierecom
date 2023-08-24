@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mongodb'),
+    'default' => env('DB_CONNECTION', 'pgsql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -92,20 +92,7 @@ return [
             // 'encrypt' => env('DB_ENCRYPT', 'yes'),
             // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
         ],
-        'mongodb' => [
-            'driver' => 'mongodb',
-           'dsn'=> env('DB_URI','mongodb://127.0.0.1:27017'),
-            // 'dsn' => env('DB_URI', 'mongodb+srv://bhattaraikeshab:<steyn>@cluster0.kqzvhei.mongodb.net/?retryWrites=true&w=majority'),
-            // 'database' => 'cluster0',
-
-            // 'host' => env('MONGODB_HOST', '127.0.0.1'),
-            // 'port' => env('MONGODB_PORT', 27017),
-            'database' => 'movie-recom',
-            // 'username' => env('MONGODB_USERNAME'),
-            // 'password' => env('MONGODB_PASSWORD'),
-
-            // ... other configurations for MongoDB
-        ],
+        
 
     ],
 

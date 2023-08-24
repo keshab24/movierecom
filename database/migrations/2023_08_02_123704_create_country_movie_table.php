@@ -12,9 +12,9 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('country_movie', function (Blueprint $table) {
-            $table->incretments('id');
+            $table->increments('id');
             $table->integer('country_id');
-            $table->Biginteger('movie_id');
+            $table->integer('movie_id');
         });
     }
 

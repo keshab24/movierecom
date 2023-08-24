@@ -15,8 +15,8 @@ return new class extends Migration
             $table->increments('id');
             $table->string('title');
             $table->text('overview');
-            $table->date('release_date');
-            $table->bigInteger('language_id');
+            $table->date('release_date')->nullable();
+            $table->integer('language_id')->nullable();
           
         });
     }
