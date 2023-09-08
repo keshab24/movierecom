@@ -13,20 +13,20 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(LanguagesSeeder::class);
+        $this->call(LanguagesSeeder::class);
        
-        // $this->call(VotesSeeder::class);
+        $this->call(VotesSeeder::class);
         $this->call(ImageSeeder::class);
-        // $this->call(MoviesSeeder::class);
+        $this->call(MoviesSeeder::class);
        
         
-        // $this->call(GenreSeeder::class);
-        // $this->call(CompanySeeder::class);
-        // $this->call(CountrySeeder::class);
-        // $this->call(KeywordSeeder::class);
+        $this->call(GenreSeeder::class);
+        $this->call(CompanySeeder::class);
+        $this->call(CountrySeeder::class);
+        $this->call(KeywordSeeder::class);
         
-        // $this->call(VotesSeeder::class);
-        // $this->call(RatingSeeder::class);
+        $this->call(VotesSeeder::class);
+        $this->call(RatingSeeder::class);
     }
 
 }

@@ -19,4 +19,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/movies', [MainController::class, 'getHomepage']);
+Route::get('/movie/{id}', [MainController::class, 'getMovie']);
 Route::post('/search/movies',[MainController::class, 'searchMovie'])->name('movies.search');
